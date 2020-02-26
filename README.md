@@ -3,30 +3,31 @@
 + import pandas as pd: what it does is important the necessary libraries
 
 + users = pd.read_csv('https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user', 
-                      sep='|', index_col='user_id'): lo que hace es buscar la base de datos del link y usar como user_id como la primaria.
+                      sep='|', index_col='user_id'): what it does is search the link database and use it as user_id as the primary 
                       
-+users.head(26): lo que hace es mostrar el numero de datos que se escriban dentro del parentesis
++users.head(26): what it does is show the number of data that is written inside the parenthesis.
 
-+ users.tail(11) a diferencia del head este muestra pero desde el ultimo, el head inicia desde el principio este inicia desde el final los numeros de datos
++ users.tail(11) unlike the head this sample but since the last one, the head starts from the beginning this starts from the end the data numbers.
 
-users.shape[0] lo que hace es mostrar de forma vertical y horizontal, con el 0 muestra de vertical cuantos datos hay en esa fila y si usamos el 1 muestra de forma horizontal las columnas de arriba que divide los datos.
+users.shape[0] What it does is show vertically and horizontally, with 0 shows vertically how much data is in that row and if we use 1 shows horizontally the columns above that divide the data.
 
-users.columns: este comando muestra las columnas, la diferencia del shape es que muestra numero y este muestra con nombres y tipo.
+users.columns: this command shows the columns, the difference of the shape is that it shows number and this shows with names and type.
 
-users.index: esto muestra los datos totales que hay en forma de numeros.
+users.index: this shows the total data in the form of numbers.
 
-users.dtypes: muestra el tipo de dato que es si es int64 o object
+users.dtypes: shows the type of data that is if it is int64 or object.
 
-users['occupation'] muestra junto con el id el orden en el que esta y alado la fila que seleccionamos mostrar, muestra id correspondiente junto lo que queremos ver.
+users['occupation'] show along with the id the order in which the row that we selected to show is winged and show corresponding id along with what we want to see.
 
-users.occupation.nunique(): muestra los diferentes datos que tiene, si hay datos repetidos encuentra todos y muestra como solo 1.
+users.occupation.nunique(): show the different data you have, if there is repeated data find all and show as only 1
 
-users.occupation.value_counts().head(1).index[0]: de todos los datos muestra cual es el mas usado o el mas repetido de todos y se busca escribiendo la fila de cual queremos saber que se repite.
+users.occupation.value_counts().head(1).index[0]: of all the data it shows which is the most used or the most repeated of all and it is sought by writing the row of which we want to know what is repeated.
 
-users.describe(include = "all"): esto describe todo de la base de datos, la cantidad, el tipo, porcentaje, etc.
+users.describe(include = "all"): this describes everything from the database, quantity, type, percentage, etc.
 
-users.occupation.describe() resume solo la columna en espesifico mostrando el dato mas usado, el tipo de datos, cuantos datos y la frecuencia usada
+users.occupation.describe() summarize only the column in specific, showing the most used data, the type of data, how much data and the frequency used
 
-round(users.age.mean()) muestra la edad promedio de la base de datos que son los usuarios.
+round(users.age.mean()) shows the average age of the database that users are.
 
-users.age.value_counts().tail(): muestra la edad que menos es usada los que menos se usan de todos a si como puede mostrar el de las otras tablas.
+users.age.value_counts().tail(): 
+It shows the age that is less used, the ones that are less used of all, as shown in the other tables
